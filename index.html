@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 10px;
+            max-width: 100%;
+            border: 3px solid black;
+            background-color: #f8f9fa;
+        }
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: 3px solid black;
+            padding-bottom: 10px;
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+        }
+
+        fieldset {
+            border: 2px solid black;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: white;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        legend {
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: #004080;
+            color: white;
+            padding: 5px 10px;
+            border: 2px solid black;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid black;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #004080;
+            color: white;
+            padding: 12px;
+            border: 2px solid black;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #003366;
+        }
+
+        .about-section {
+            background-color: white;
+            padding: 15px;
+            border: 2px solid black;
+            margin-bottom: 15px;
+        }
+
+        .about-section h3 {
+            background-color: #004080;
+            color: white;
+            padding: 8px;
+            text-align: center;
+            margin: -15px -15px 10px -15px;
+        }
+
+        .about-section a {
+            color: #004080;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .about-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./Channel We Page Image.png" alt="Application Poster"
+        style="width: 100%; display: block; margin: 0; border-bottom: 3px solid black;">
+
+    <div class="about-section">
+        <p>Hi, I'm Chandra! 🌟</p>
+        <p>This channel is designed to help anyone aspiring to secure a government job in various departments. I will
+            share:</p>
+        <ul>
+            <li>✅ Latest Government Job Updates</li>
+            <li>✅ Study Materials</li>
+            <li>✅ Video Lectures</li>
+            <li>✅ Admit Cards</li>
+            <li>✅ Results</li>
+            <li>✅ Previous Papers</li>
+            <li>✅ Step by Step Guidance</li>
+        </ul>
+        <p><strong>All Government Job Updates 💫</strong></p>
+        <p>📸 Instagram: <a
+                href="https://www.instagram.com/all_government_notifications/profilecard/?igsh=MW9yNW04ZnJzbW9nbA%3D%3D"
+                target="_blank">Click Here</a></p>
+        <p>📢 WhatsApp Channel: <a href="https://www.whatsapp.com/channel/0029VanToDy3gvWdW6pOsQ3J" target="_blank">Join
+                Now</a></p>
+        <p>👥 WhatsApp Group: <a href="https://chat.whatsapp.com/HG3PfxqIi5V4IlG6tit0Wu" target="_blank">Join
+                Here</a></p>
+
+        <p>Thank you for joining, and let’s make your government job dreams a reality! ❣</p>
+    </div>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label>Full Name</label><input type="text" placeholder="Enter Your Name" name="full_name" required>
+            <label>Date of Birth</label><input type="date" name="dob" required>
+            <label>Gender</label>
+            <select name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label>Mobile Number</label><input type="tel" placeholder="+91 0000000000" name="mobile" required>
+            <label>Email</label><input type="email" placeholder="Eg: yourmail@gmail.com" name="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Educational Details</legend>
+            <label>Educational Qualification</label>
+            <select name="highest_qualification" required>
+                <option value="">Select</option>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="ITI">ITI</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Degree">Degree</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="Post Graduation">PG</option>
+            </select>
+
+            <label>Upload Certificate</label>
+            <input type="file" name="qualification_certificate" accept="application/pdf,image/*" required>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Community Details</legend>
+            <label>Category</label>
+            <select name="category" required>
+                <option value="">Select</option>
+                <option value="general">General</option>
+                <option value="sc">SC</option>
+                <option value="st">ST</option>
+                <option value="obc">OBC</option>
+                <option value="ews">EWS</option>
+            </select>
+            <label>Upload Caste Certificate</label>
+            <input type="file" name="upload caste Certificate" accept="application/pdf,image/*" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Upload Documents</legend>
+            <label>Upload Photo</label><input type="file" name="photo" accept="image/*" required>
+            <label>Upload Signature</label><input type="file" name="signature" accept="image/*" required>
+            <label>Upload Aadhar</label><input type="file" name="Aadhar" accept="image/*" required>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
